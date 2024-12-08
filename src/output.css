@@ -558,20 +558,28 @@ video {
   position: fixed;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
 
-.flex-col {
-  flex-direction: column;
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-56 {
+  width: 14rem;
 }
 
 .bg-background {
   background-color: rgba(var(--background));
-}
-
-.p-10 {
-  padding: 2.5rem;
 }
 
 .dark {
@@ -579,6 +587,8 @@ video {
   --h1: 220, 220, 220;
   --h2: 180, 180, 180;
   --p: 180, 180, 180;
+  --logo: https://github.com/rookitnet/.github/blob/main/images/rookit-logo.png?raw=true
+
 }
 
 .light {
@@ -586,6 +596,8 @@ video {
   --h1: 0, 0, 0;
   --h2: 0, 0, 0;
   --p: 20, 20, 20;
+  --logo: https://github.com/rookitnet/.github/blob/main/images/rookit-logo-black.png?raw=true
+
 }
 
 body {
