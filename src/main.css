@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  --background: 17, 17, 17;
+  --h1: 220, 220, 220;
+  --h2: 180, 180, 180;
+  --p: 180, 180, 180;
+}
+
+.light {
+  --background: f7, f7, f7;
+  --h1: 0, 0, 0;
+  --h2: 0, 0, 0;
+  --p: 20, 20, 20;
+}
+
+body {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgba(var(--h1));
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgba(var(--h2));
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: rgba(var(--p));
+}
