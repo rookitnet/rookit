@@ -5,9 +5,9 @@ import { onThemeChange, toggleTheme } from "../helpers/theme";
 import { useEffect, useState } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { BrowserView, MobileView } from "react-device-detect";
-import Logo from "./Logo";
+import { Logo } from "./logo";
 
-export default function Navbar() {
+export function Navbar() {
 
     const navigate = useNavigate();
     const [theme, setTheme] = useState("dark")

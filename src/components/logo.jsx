@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { onThemeChange } from "../helpers/theme"
 
-export default function Logo() {
+export function Logo() {
 
     const [theme, setTheme] = useState("dark")
 
