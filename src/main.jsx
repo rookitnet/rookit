@@ -4,27 +4,12 @@ import { useEffect } from "react"
 import "./output.css"
 
 import Join from "./pages/join/Join"
+import { onPageLoad } from "./helpers/theme"
 
 export default function Main() {
 
   // Does the use have dark mode selected?
-  useEffect(() => {
-
-    const selectedTheme = localStorage.getItem('theme')
-
-    // Do they already have a selected theme?
-    if (selectedTheme) {
-      document.body.classList.add(selectedTheme)
-
-      // Does the os prefer dark mode?
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      document.body.classList.add("dark")
-
-      // Otherwise, use light mode.
-    } else {
-      document.body.classList.add("light")
-    }
-  }, [])
+  useEffect(() => onPageLoad(), [])
 
   return (
     <BrowserRouter>

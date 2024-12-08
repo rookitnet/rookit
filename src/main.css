@@ -4,7 +4,8 @@
 
 .dark {
   --background: 17, 17, 17;
-  --h1: 220, 220, 220;
+  --foreground: 247, 247, 247;
+  --h1: 247, 247, 247;
   --h2: 180, 180, 180;
   --p: 180, 180, 180;
 
@@ -12,17 +13,19 @@
 }
 
 .light {
-  --background: f7, f7, f7;
-  --h1: 0, 0, 0;
-  --h2: 0, 0, 0;
-  --p: 20, 20, 20;
+  --background: 247, 247, 247;
+  --foreground: 17, 17, 17;
+  --h1: 23, 23, 23;
+  --h2: 23, 23, 23;
+  --p: 23, 23, 23;
 
   --logo: https://github.com/rookitnet/.github/blob/main/images/rookit-logo-black.png?raw=true
 }
 
 body {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
   font-style: normal;
 }
 

@@ -558,33 +558,140 @@ video {
   position: fixed;
 }
 
-.h-10 {
-  height: 2.5rem;
+.absolute {
+  position: absolute;
 }
 
-.h-56 {
-  height: 14rem;
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+
+.size-7 {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.max-h-full {
+  max-height: 100%;
 }
 
 .min-h-screen {
   min-height: 100vh;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-full {
+  width: 100%;
 }
 
-.w-56 {
-  width: 14rem;
+.max-w-full {
+  max-width: 100%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .bg-background {
   background-color: rgba(var(--background));
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity, 1));
+}
+
+.text-foreground {
+  color: rgba(var(--foreground));
+}
+
+.text-foreground\/80 {
+  color: rgba(var(--foreground), 0.8);
+}
+
+.text-yellow-500 {
+  --tw-text-opacity: 1;
+  color: rgb(234 179 8 / var(--tw-text-opacity, 1));
+}
+
+.opacity-\[96\%\] {
+  opacity: 96%;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
 .dark {
   --background: 17, 17, 17;
-  --h1: 220, 220, 220;
+  --foreground: 247, 247, 247;
+  --h1: 247, 247, 247;
   --h2: 180, 180, 180;
   --p: 180, 180, 180;
   --logo: https://github.com/rookitnet/.github/blob/main/images/rookit-logo.png?raw=true
@@ -592,17 +699,19 @@ video {
 }
 
 .light {
-  --background: f7, f7, f7;
-  --h1: 0, 0, 0;
-  --h2: 0, 0, 0;
-  --p: 20, 20, 20;
+  --background: 247, 247, 247;
+  --foreground: 17, 17, 17;
+  --h1: 23, 23, 23;
+  --h2: 23, 23, 23;
+  --p: 23, 23, 23;
   --logo: https://github.com/rookitnet/.github/blob/main/images/rookit-logo-black.png?raw=true
 
 }
 
 body {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
   font-style: normal;
 }
 
