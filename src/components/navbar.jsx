@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router";
-import Logo from "./Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faHamburger, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { onThemeChange, toggleTheme } from "../helpers/theme";
 import { useEffect, useState } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { BrowserView, MobileView } from "react-device-detect";
+import Logo from "./Logo";
 
 export default function Navbar() {
 
