@@ -18,7 +18,7 @@ export function Navbar() {
     }, [])
 
     const moonIcon = <FontAwesomeIcon icon={faMoon} className="text-blue-400 size-6"/>
-    const sunIcon = <FontAwesomeIcon icon={faSun} className="text-yellow-500 size-6"/>
+    const sunIcon = <FontAwesomeIcon icon={faSun} className="text-yellow-400 size-6"/>
 
     const themeIcon = theme == "dark" ? moonIcon : sunIcon
 
@@ -62,7 +62,7 @@ export function Navbar() {
             </div>
             <div className="z-20 absolute right-0 top-0 w-2/3 m-4 p-4 bg-background rounded-lg">
                 <div className="grid gap-4">
-                    <button onClick={() => navigate("/about")} className="text-foreground/80 font-medium text-2xl text-left">About</button>
+                    <button onClick={() => navigate("/about")} className="text-foreground/80 font-medium text-[1.3rem] text-left">About</button>
                     
                     {/** Divider*/}
                     <div className="bg-foreground/5 h-1 w-full rounded-lg"></div>
