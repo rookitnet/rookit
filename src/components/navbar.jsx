@@ -22,8 +22,6 @@ export function Navbar() {
 
     const themeIcon = theme == "dark" ? moonIcon : sunIcon
 
-    const className = hamburger ? "fixed w-full h-24 p-8 flex justify-between blur-sm" : "fixed w-full h-24 p-8 flex justify-between"
-
     return (
         <>
         <BrowserView>
@@ -43,7 +41,7 @@ export function Navbar() {
         </header>
         </BrowserView>
         <MobileView>
-        <header className={className}>
+        <header className="fixed w-full h-24 p-8 flex justify-between">
             <div className="flex items-center gap-2">
                 <div className="h-6 opacity-[96%]">
                     <Logo />
@@ -56,7 +54,7 @@ export function Navbar() {
         </header>
         {hamburger ? <>
             {/* Darken the background */}
-            <div className="z-10 absolute w-full h-full bg-foreground/5" onClick={() => {setHamburger(!hamburger)}}></div>
+            <div className="z-10 absolute w-full h-full bg-foreground/5 backdrop-blur-sm" onClick={() => {setHamburger(!hamburger)}}></div>
             {/* Hamburger */}
             <div className="z-30 absolute right-0 top-0 m-4 p-4">
                 <button onClick={() => {setHamburger(!hamburger)}}><FontAwesomeIcon icon={faTimes} className="text-foreground/40 size-7"/></button>
