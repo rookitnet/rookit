@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  transition-duration: 100ms;
+}
+
 .dark {
   --background: 17, 17, 17;
   --foreground: 247, 247, 247;

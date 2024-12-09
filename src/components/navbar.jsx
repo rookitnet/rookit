@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faCross, faMoon, faSun, faTimes, faX } from "@fortawesome/free-solid-svg-icons";
 import { onThemeChange, toggleTheme } from "../helpers/theme";
 import { useEffect, useState } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -22,6 +22,8 @@ export function Navbar() {
 
     const themeIcon = theme == "dark" ? moonIcon : sunIcon
 
+    const className = hamburger ? "fixed w-full h-24 p-8 flex justify-between blur-sm" : "fixed w-full h-24 p-8 flex justify-between"
+
     return (
         <>
         <BrowserView>
@@ -40,7 +42,7 @@ export function Navbar() {
         </header>
         </BrowserView>
         <MobileView>
-        <header className="fixed w-full h-24 p-8 flex justify-between">
+        <header className={className}>
             <div className="flex items-center gap-2">
                 <div className="h-6 opacity-[96%]">
                     <Logo />
@@ -52,9 +54,27 @@ export function Navbar() {
             </div>
         </header>
         {hamburger ? <>
-        <div className="absolute w-full h-full bg-background opacity-40 z-10" onClick={() => {setHamburger(!hamburger)}}>
-
-        </div>
+            {/* Darken the background */}
+            <div className="z-10 absolute w-full h-full bg-foreground/5" onClick={() => {setHamburger(!hamburger)}}></div>
+            {/* Hamburger */}
+            <div className="z-30 absolute right-0 top-0 m-4 p-4">
+                <button onClick={() => {setHamburger(!hamburger)}}><FontAwesomeIcon icon={faTimes} className="text-foreground/40 size-7"/></button>
+            </div>
+            <div className="z-20 absolute right-0 top-0 w-2/3 m-4 p-4 bg-background rounded-lg">
+                <div className="grid gap-4">
+                    <button onClick={() => navigate("/about")} className="text-foreground/80 font-medium text-2xl text-left">About</button>
+                    
+                    {/** Divider*/}
+                    <div className="bg-foreground/5 h-1 w-full rounded-lg"></div>
+                    
+                    <div className="float-right">
+                        <div className="flex float-right gap-4">
+                            <button onClick={() => {toggleTheme()}}>{themeIcon}</button>
+                            <a href="https://github.com/rookitnet" target="_blank"><FontAwesomeIcon icon={faGithub} className="text-foreground/80 size-6"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </> : <></>}
         </MobileView>
         </>
