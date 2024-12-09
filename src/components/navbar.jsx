@@ -36,6 +36,7 @@ export function Navbar() {
             </div>
             <div className="flex items-center gap-8">
                 <button onClick={() => navigate("/about")} className="text-foreground/80 font-medium">About</button>
+                <button onClick={() => navigate("/login")} className="text-foreground/80 font-medium">Login</button>
                 <button onClick={() => {toggleTheme()}}>{themeIcon}</button>
                 <a href="https://github.com/rookitnet" target="_blank"><FontAwesomeIcon icon={faGithub} className="text-foreground/80 size-6"/></a>
             </div>
@@ -63,6 +64,7 @@ export function Navbar() {
             <div className="z-20 absolute right-0 top-0 w-2/3 m-4 p-4 bg-background rounded-lg">
                 <div className="grid gap-4">
                     <button onClick={() => navigate("/about")} className="text-foreground/80 font-medium text-[1.3rem] text-left">About</button>
+                    <button onClick={() => navigate("/about")} className="text-foreground/80 font-medium text-[1.3rem] text-left">Login</button>
                     
                     {/** Divider*/}
                     <div className="bg-foreground/5 h-1 w-full rounded-lg"></div>

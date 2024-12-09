@@ -1,6 +1,7 @@
 import { BrowserView, MobileView } from "react-device-detect";
 import { Navbar } from "../../components/navbar";
 import { Input } from "../../components/input";
+import { Button } from "../../components/button";
 
 export default function Join() {
     return (
@@ -20,8 +21,11 @@ export default function Join() {
 function Form() {
     return (
     <>
-    <div className="h-screen flex items-center justify-center">
-        <Input/>
+    <div className="h-screen grid items-center justify-center gap-2">
+        <div className="grid gap-2">
+            <Input/>
+            <Button/>
+        </div>
     </div>
     </>
     )

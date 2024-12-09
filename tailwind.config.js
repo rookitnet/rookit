@@ -6,6 +6,8 @@ export default {
       colors: {
         background: "rgba(var(--background))",
         foreground: "rgba(var(--foreground))",
+        primarybutton: "rgba(var(--primarybutton))",
+        primarybuttontext: "rgba(var(--primarybuttontext))",
       }
     },
   },

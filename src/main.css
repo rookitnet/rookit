@@ -9,6 +9,8 @@ body {
 .dark {
   --background: 17, 17, 17;
   --foreground: 247, 247, 247;
+  --primarybutton: 96, 165, 250;
+  --primarybuttontext: 247, 247, 247;
   --h1: 247, 247, 247;
   --h2: 180, 180, 180;
   --p: 180, 180, 180;
@@ -19,6 +21,8 @@ body {
 .light {
   --background: 247, 247, 247;
   --foreground: 17, 17, 17;
+  --primarybutton: 17, 17, 17;
+  --primarybuttontext: 247, 247, 247;
   --h1: 23, 23, 23;
   --h2: 23, 23, 23;
   --p: 23, 23, 23;
